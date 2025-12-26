@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoDifferential", "AutoDifferential\AutoDifferential.csproj", "{CEA93A14-412C-4263-92CD-F9D10D7C5165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HachiDeep", "HachiDeep\HachiDeep.csproj", "{D6D909FB-EE24-4C78-9A41-D63D023A5B01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEA93A14-412C-4263-92CD-F9D10D7C5165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEA93A14-412C-4263-92CD-F9D10D7C5165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEA93A14-412C-4263-92CD-F9D10D7C5165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEA93A14-412C-4263-92CD-F9D10D7C5165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D909FB-EE24-4C78-9A41-D63D023A5B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D909FB-EE24-4C78-9A41-D63D023A5B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D909FB-EE24-4C78-9A41-D63D023A5B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D909FB-EE24-4C78-9A41-D63D023A5B01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
