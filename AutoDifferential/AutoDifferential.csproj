@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\HachiDeep\HachiDeep.csproj" />
+        <ProjectReference Include="..\HachiDeep\HachiDeep.csproj"/>
     </ItemGroup>
 
 </Project>
