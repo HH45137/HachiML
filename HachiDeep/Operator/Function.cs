@@ -1,18 +1,21 @@
-﻿namespace HachiDeep.Operator;
+﻿using System.Numerics;
+using NumSharp;
+
+namespace HachiDeep.Operator;
 
 public interface IFunction<T>
 {
-    Variable<T> Call(T value);
+    Variable Call(T value);
 
-    Variable<T> Forward(T value);
+    Variable Forward(T value);
 }
 
 public abstract class FunctionBase<T> : IFunction<T>
 {
-    public Variable<T> Call(T value)
+    public Variable Call(T value)
     {
         return Forward(value);
     }
 
-    public abstract Variable<T> Forward(T value);
+    public abstract Variable Forward(T value);
 }

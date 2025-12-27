@@ -1,25 +1,26 @@
-﻿using NumSharp;
+﻿using System;
+using NumSharp;
 
 namespace HachiDeep.Operator;
 
-public class Square : FunctionBase<double>
+public class Square : FunctionBase<NDArray>
 {
-    public override Variable<double> Forward(double value)
+    public override Variable Forward(NDArray value)
     {
-        return new Variable<double>(value * value);
+        return new Variable(np.square(value));
     }
 }
 
-public class Exp : FunctionBase<double>
+public class Exp : FunctionBase<NDArray>
 {
-    public override Variable<double> Forward(double value)
+    public override Variable Forward(NDArray value)
     {
-        return new Variable<double>(np.exp(value));
+        return new Variable(np.exp(value));
     }
 }
 
 public static class Operators
 {
-    public static readonly Func<double, Variable<double>> Square = new Square().Call;
-    public static readonly Func<double, Variable<double>> Exp = new Exp().Call;
+    public static readonly Func<NDArray, Variable> Square = new Square().Call;
+    public static readonly Func<NDArray, Variable> Exp = new Exp().Call;
 }
