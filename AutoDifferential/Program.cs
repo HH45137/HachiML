@@ -43,6 +43,19 @@ internal static class Program
         Console.WriteLine(dy);
 
         Console.WriteLine();
+
+        Func<NDArray, Variable> f2 = (x) =>
+        {
+            var A = Operators.Square;
+            var B = Operators.Exp;
+            var C = Operators.Square;
+            return C(B(A(x)));
+        };
+        var x4 = new Variable(np.array(0.5));
+        var dy1 = numerical_diff(f2, x4);
+        Console.WriteLine(dy1);
+
+        Console.WriteLine();
     }
 
     private static Variable numerical_diff(Func<NDArray, Variable> func, Variable x, double eps = 1e-4)
